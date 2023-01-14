@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.title {
+  color: rgb(73, 101, 30);
+  font-family: "Baloo Bhai 2", cursive;
+}
+.outer-hr {
+  width: 300px;
+  margin: 5px 15px 15px;
+  height: 2px;
+  background-color: rgb(73, 101, 30);
+}
+.container::before {
+  content: "";
+  background: url(bg.jpg) no-repeat center center/cover;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.survey-box {
+  padding: 30px 0;
+  width: 450px;
+  background-color: rgb(136, 241, 234);
+  opacity: 0.6;
+  border: 2px solid burlywood;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+}
+form {
+  width: 300px;
+}
+input,
+textarea,
+select,
+input[type="submit"] {
+  border-radius: 10px;
+  border: 2px solid purple;
+}
+textarea {
+  border-radius: 10px;
+  height: 70px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+input[type="submit"],
+select,
+.outer-hr {
+  width: 300px;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Survey Form</h1>
+      <hr class="outer-hr" />
+      <div class="survey-box">
+        <form>
+          <label for="name">Name:</label>
+          <br />
+          <input type="text" id="name" />
+          <br />
+          <label for="email">Email:</label>
+          <br />
+          <input type="email" id="email" />
+          <br />
+          <label for="age">Age:</label>
+          <br />
+          <input type="number" id="age" />
+          <br />
+          <label for="phone">Phone Number:</label>
+          <br />
+          <input type="tel" id="phone" />
+          <br />
+          <label for="address">Address:</label>
+          <br />
+          <textarea id="address" cols="30" rows="10"></textarea>
+          <br />
+          <label for="country">Country:</label>
+          <br />
+          <select id="country">
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>France</option>
+            <option>Germany</option>
+            <option>Australia</option>
+            <option>China</option>
+            <option>Russia</option>
+            <option>Saudi Arabia</option>
+            <option>Israel</option>
+            <option>Israel</option>
+            <option>Other</option>
+          </select>
+          <br />
+          <label for="gender">Gender:</label>
+          <br />
+          <input type="radio" name="gender" id="male" />
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="others" />
+          <label for="others">Others</label>
+          <hr class="inner-hr" />
+          <label for="rating">Rate Our Product</label>
+          <br />
+          <input type="radio" name="rating" id="good" />
+          <label for="good">Good</label>
+          <input type="radio" name="rating" id="average" />
+          <label for="average">Average</label>
+          <input type="radio" name="rating" id="bad" />
+          <label for="bad">Bad</label>
+          <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
